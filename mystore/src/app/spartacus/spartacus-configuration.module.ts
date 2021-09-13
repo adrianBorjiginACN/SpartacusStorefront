@@ -29,6 +29,10 @@ import { defaultCmsContentProviders, layoutConfig, mediaConfig } from "@spartacu
     features: {
       level: '3.4'
     }
+  }), provideConfig({
+    checkout: {
+      guest: true
+    }
   })]
 })
 export class SpartacusConfigurationModule { }
