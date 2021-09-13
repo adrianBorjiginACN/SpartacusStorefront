@@ -33,6 +33,16 @@ import { defaultCmsContentProviders, layoutConfig, mediaConfig } from "@spartacu
     checkout: {
       guest: true
     }
+  }), provideConfig({
+    routing: {
+      routes: {
+          product: { 
+            paths: [
+              'cameras/:name/:productCode',
+            ] 
+          }
+      }
+  }
   })]
 })
 export class SpartacusConfigurationModule { }
