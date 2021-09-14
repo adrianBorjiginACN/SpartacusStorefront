@@ -1,0 +1,46 @@
+$breakpoint-tablet: 770px;
+
+:root {
+    --cx-color-dark: #626262;
+    --cx-color-primary: red;//#efac02;
+    --cx-color-secondary: red;//#d5a26f;
+}
+
+cx-link {
+    color: var(--cx-color-primary);
+}
+
+header.SiteContext:after {
+    content: unset;
+}
+
+header {
+    padding: 0px;
+    .SiteLogo{
+        width:155px;
+    }
+    .SiteContext {
+        flex: 75%;
+    }
+    .NavigationBar {
+        flex:80%;
+    }
+    cx-searchbox label {
+        width: unset;
+        min-width: unset;
+    }
+    cx-navigation-ui {
+        justify-content: flex-end;
+    }
+}
+
+@media (min-width: $breakpoint-tablet) {
+    header .SearchBox {
+        margin-top: 0px;
+        width: 100%;
+    }
+}
+
+.table td {
+    text-align: centre;
+}

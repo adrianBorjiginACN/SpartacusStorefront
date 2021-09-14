@@ -43,6 +43,21 @@ import { defaultCmsContentProviders, layoutConfig, mediaConfig } from "@spartacu
           }
       }
   }
+  }), provideConfig({
+    layoutSlots: {
+      header: {
+        lg: {
+          slots: [
+            'SiteContext',
+            'SiteLogin',
+            'MiniCart',
+            'SiteLogo',
+            'NavigationBar',
+            'SearchBox',
+          ],
+        },
+      }
+    }
   })]
 })
 export class SpartacusConfigurationModule { }
